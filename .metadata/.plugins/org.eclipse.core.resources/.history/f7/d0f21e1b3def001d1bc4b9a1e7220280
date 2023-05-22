@@ -1,0 +1,24 @@
+package my;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class New {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+	//System.setProperty("webdriver.chrome,driver",""))
+ WebDriver driver= new ChromeDriver();
+	driver.get("https://www.orangehrm.com/");
+	driver.manage().window().maximize();
+	driver.findElement(By.cssSelector("input[type='email']")).click();
+	driver.findElement(By.cssSelector("input[type='email']")).sendKeys("k.nismaashraf@gmail.com");
+	driver.findElement(By.xpath("//input[@type='submit']")).click();
+	Thread.sleep(5000);
+	driver.quit();
+	
+	}
+
+}

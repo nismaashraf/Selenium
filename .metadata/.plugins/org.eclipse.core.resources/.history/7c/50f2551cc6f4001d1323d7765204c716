@@ -1,0 +1,46 @@
+package New;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+public class Web {
+	WebDriver driver;
+	
+	public  void Add() throws InterruptedException {
+		 driver = new ChromeDriver();
+		driver.navigate().to("https://selenium.obsqurazone.com/simple-form-demo.php");
+		driver.manage().window().maximize();
+		Thread.sleep(3000);
+	}
+
+	@Test
+	public void Admin() {
+		
+		driver.findElement(By.id("single-input-field")).click();
+		driver.findElement(By.id("single-input-field")).sendKeys("this is the message");
+		driver.findElement(By.id("button-one")).click();
+		String Expected = "Your Message : this is the message";
+		String Actual = driver.findElement(By.id("message-one")).getText();
+		Assert.assertEquals(Actual, Expected, "fail");
+		driver.findElement(By.id("value-a")).click();
+		boolean status=driver.findElement(By.id("value-a")).isDisplayed();
+		driver.findElement(By.id("value-a")).sendKeys("5");
+		driver.findElement(By.cssSelector("input[id='value-b']")).click();
+		driver.findElement(By.cssSelector(("input[id='value-b']"))).sendKeys("10");
+		driver.findElement(By.cssSelector("button[id='button-two']")).click();
+		String Expect = "Total A + B : 15";
+		String ActualNum = driver.findElement(By.id("message-two")).getText();
+		Assert.assertEquals(ActualNum, Expect, "fail");
+	}
+	@AfterMethod
+	public void Z() {
+
+		driver.quit();
+
+	}
+
+}

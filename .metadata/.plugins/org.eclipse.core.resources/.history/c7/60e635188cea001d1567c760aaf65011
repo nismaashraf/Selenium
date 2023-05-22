@@ -1,0 +1,25 @@
+package Two;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Two {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+	//driver.get("https://www.flipkart.com/");
+		driver.navigate().to("https://www.flipkart.com/");
+		String Title=driver.getTitle();
+		System.out.println("this" +Title);
+		String Fe=driver.getCurrentUrl();
+		System.out.println("this is="+Fe);
+		String M=driver.getPageSource();
+		System.out.println(M);
+		driver.manage().window().maximize();
+	Thread.sleep(5000);
+	driver.quit();
+
+	}
+
+}

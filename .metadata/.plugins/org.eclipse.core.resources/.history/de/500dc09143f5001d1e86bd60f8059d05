@@ -1,0 +1,36 @@
+package New;
+
+import org.testng.annotations.Test;
+
+public class ObzaqouraTest {
+
+  @Test
+  public void AddTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void AdminTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void MultipleTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void RadioTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void SelectBoxTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void ZTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+}

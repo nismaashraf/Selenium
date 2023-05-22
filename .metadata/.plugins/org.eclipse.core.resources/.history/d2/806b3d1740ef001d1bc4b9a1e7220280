@@ -1,0 +1,29 @@
+package my;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class New {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+ WebDriver driver= new ChromeDriver();
+	driver.get("https://www.orangehrm.com/");
+	String Tit="HRM HR Software | Free & Open Source HR Software | HRMS | HRIS | OrangeHRM";
+	//driver.getTitle();
+	String T=driver.getTitle();
+	System.out.println("this"+T);
+	Assert.assertEquals(true,true);
+	driver.manage().window().maximize();
+	driver.findElement(By.cssSelector("input[type='email']")).click();
+	driver.findElement(By.cssSelector("input[type='email']")).sendKeys("k.nismaashraf@gmail.com");
+	driver.findElement(By.xpath("//input[@type='submit']")).click();
+	Thread.sleep(5000);
+	driver.quit();
+	
+	}
+
+}
