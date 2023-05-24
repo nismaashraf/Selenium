@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-14T16:14:20 EEST" name="Suite" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1283">
+    <groups>
+    </groups>
+    <test started-at="2023-05-14T16:14:20 EEST" name="Test" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1283">
+      <class name="Ng.DogI">
+        <test-method is-config="true" signature="Before()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:20 EEST" name="Before" finished-at="2023-05-14T16:14:20 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Before -->
+        <test-method is-config="true" signature="WebLogoutDogInsurance()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:20 EEST" name="WebLogoutDogInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogoutDogInsurance -->
+        <test-method signature="MobileLoginDogInsurance()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:20 EEST" name="MobileLoginDogInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginDogInsurance -->
+        <test-method is-config="true" signature="WebLogoutDogInsurance()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:20 EEST" name="WebLogoutDogInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogoutDogInsurance -->
+        <test-method signature="WebLoginDogInsurance()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:20 EEST" name="WebLoginDogInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginDogInsurance -->
+        <test-method is-config="true" signature="After()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:21 EEST" name="After" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+        <test-method is-config="true" signature="MobileLogoutDogInsurance()[pri:0, instance:Ng.DogI@3e27aa33]" started-at="2023-05-14T16:14:21 EEST" name="MobileLogoutDogInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogoutDogInsurance -->
+      </class> <!-- Ng.DogI -->
+      <class name="Ng.HoI">
+        <test-method is-config="true" signature="WebLogoutHomeInsurance()[pri:0, instance:Ng.HoI@f0c8a99]" started-at="2023-05-14T16:14:20 EEST" name="WebLogoutHomeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogoutHomeInsurance -->
+        <test-method signature="MobileLoginHomeInsurance()[pri:0, instance:Ng.HoI@f0c8a99]" started-at="2023-05-14T16:14:20 EEST" name="MobileLoginHomeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginHomeInsurance -->
+        <test-method signature="WebLoginHomeInsurance()[pri:0, instance:Ng.HoI@f0c8a99]" started-at="2023-05-14T16:14:20 EEST" name="WebLoginHomeInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1108" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'com.google.common.collect.ImmutableMap com.google.common.collect.ImmutableMap.of(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'
+at org.openqa.selenium.chrome.AddHasCasting.getAdditionalCommands(AddHasCasting.java:38)
+at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.getExtraCommands(ChromeDriver.java:116)
+at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at Ng.HoI.WebLoginHomeInsurance(HoI.java:13)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeInsurance -->
+        <test-method signature="MobileLogoutHomeInsurance()[pri:1, instance:Ng.HoI@f0c8a99]" started-at="2023-05-14T16:14:21 EEST" name="MobileLogoutHomeInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogoutHomeInsurance -->
+      </class> <!-- Ng.HoI -->
+      <class name="Ng.EduI">
+        <test-method is-config="true" signature="WebLoginEducationInsurance()[pri:0, instance:Ng.EduI@740cae06]" started-at="2023-05-14T16:14:21 EEST" name="WebLoginEducationInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginEducationInsurance -->
+        <test-method signature="WebLogoutEducationInsurance()[pri:0, instance:Ng.EduI@740cae06]" started-at="2023-05-14T16:14:21 EEST" name="WebLogoutEducationInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogoutEducationInsurance -->
+        <test-method signature="MobileLogoutEducationInsurance()[pri:4, instance:Ng.EduI@740cae06]" started-at="2023-05-14T16:14:21 EEST" name="MobileLogoutEducationInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogoutEducationInsurance -->
+        <test-method is-config="true" signature="MobileLoginEducationInsurance()[pri:0, instance:Ng.EduI@740cae06]" started-at="2023-05-14T16:14:21 EEST" name="MobileLoginEducationInsurance" finished-at="2023-05-14T16:14:21 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginEducationInsurance -->
+      </class> <!-- Ng.EduI -->
+      <class name="Ng.LiI">
+        <test-method signature="MobileLoginLifeInsurance()[pri:0, instance:Ng.LiI@b9b00e0]" started-at="2023-05-14T16:14:20 EEST" name="MobileLoginLifeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginLifeInsurance -->
+        <test-method signature="MobileLogoutLifeInsurance()[pri:0, instance:Ng.LiI@b9b00e0]" started-at="2023-05-14T16:14:20 EEST" name="MobileLogoutLifeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLogoutLifeInsurance -->
+        <test-method signature="WebLoginLifeInsurance()[pri:0, instance:Ng.LiI@b9b00e0]" started-at="2023-05-14T16:14:20 EEST" name="WebLoginLifeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginLifeInsurance -->
+        <test-method signature="WebLogoutLifeInsurance()[pri:0, instance:Ng.LiI@b9b00e0]" started-at="2023-05-14T16:14:20 EEST" name="WebLogoutLifeInsurance" finished-at="2023-05-14T16:14:20 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLogoutLifeInsurance -->
+      </class> <!-- Ng.LiI -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
